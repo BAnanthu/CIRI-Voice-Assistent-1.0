@@ -1,0 +1,505 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Well, hello!
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO *</pattern>
+        <template>
+            Well, hello!
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HI *</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HAI</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HAI *</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIRI</pattern>
+        <template>
+         NOT SIRI, I AM CIRI.
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY *</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO ARE YOU</pattern>
+        <template>
+            I'm ciri!
+        </template>
+    </category>
+     <category>
+        <pattern>name *</pattern>
+        <template>
+            my name is ciri
+        </template>
+    </category>
+     <category>
+        <pattern>what is your name</pattern>
+        <template>
+            I'm ciri!
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>WHO IS YOUR FATHER</pattern>
+        <template>
+           sorry, I'm an assistant,
+           what about you sir?
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS YOUR MOTHER</pattern>
+        <template>
+           sorry, I'm a voice assistant.
+        </template>
+    </category>
+
+     <category>
+        <pattern>College name</pattern>
+        <template>
+          UKF college of engineering and technology
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>YOUR NAME</pattern>
+        <template>
+            <srai>WHO ARE YOU</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>
+            <srai>WHO ARE YOU</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YOUR NAME</pattern>
+        <template>
+            WHO ARE YOU
+        </template>
+    </category>
+
+
+
+    <category>
+      <pattern>My name is *</pattern>
+      <template>
+         Hello <star/> <think><set name = "username"> <star/></set></think>
+      </template>
+   </category>
+
+   <category>
+      <pattern>Bye</pattern>
+      <template>
+         ok <get name = "username"/> Thanks for the conversation!
+      </template>
+   </category>
+
+   <category>
+      <pattern>Bye *</pattern>
+      <template>
+         ok <get name = "username"/> Thanks for the conversation!
+      </template>
+   </category>
+
+   <category>
+      <pattern>ok Bye *</pattern>
+      <template>
+         ok <get name = "username"/> Thanks for the conversation!
+      </template>
+   </category>
+
+   <category>
+      <pattern>see you later</pattern>
+     <template>
+            <srai>Bye</srai>
+        </template>
+   </category>
+
+    <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>
+        <random>
+            <li>I'm as happy as larry,thank you very much</li>
+            <li>fantastic, thanks. How can i help</li>
+            <li>Fine, thanks.</li>
+            <li>Pretty good..</li>
+            <li>Great! How are you doing?</li>
+            <li>Not bad.</li>
+            <li>Very well, thanks.</li>
+            <li>It's going well.</li>
+            <li>i'm doing well, thank you.</li>
+        </random>
+    </template>
+    </category>
+
+     <category>
+        <pattern>COLLEGE</pattern>
+        <template>
+            UKF college of engineering and technology
+        </template>
+     </category>
+
+      <category>
+        <pattern>COLLEGE NAME *</pattern>
+        <template>
+            <srai>COLLEGE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE COLLEGE NAME</pattern>
+        <template>
+            UKF college of engineering and technology
+        </template>
+    </category>
+    <category>
+        <pattern>What is the name of the college</pattern>
+        <template>
+            UKF college of engineering and technology
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is the electrical block</pattern>
+        <template>
+            go straigt.then turn left ,then the second academic block.near the admin bock
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is the electrical</pattern>
+        <template>
+            go straigt.then turn left ,then the second academic block.near the admin bock
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is electrical</pattern>
+        <template>
+            go straigt.then turn left ,then the second academic block.near the admin bock
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is electrical *</pattern>
+        <template>
+            go straigt.then turn left ,then the second academic block.near the admin bock
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is the electrical *</pattern>
+        <template>
+            go straigt.then turn left ,then the second academic block.near the admin bock
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is electronics *</pattern>
+        <template>
+            go straigt, then turn left,then the third academic block.
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is electronics</pattern>
+        <template>
+            go straigt, then turn left,then the third academic block.
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is the electronics *</pattern>
+        <template>
+            go straigt, then turn left,then the third academic block.
+        </template>
+    </category>
+
+    <category>
+        <pattern>where is the electronics</pattern>
+        <template>
+            go straigt, then turn left,then the third academic block.
+        </template>
+    </category>
+
+    <category>
+      <pattern>I LIKE *</pattern>
+      <template>
+         I too like <star/>.
+      </template>
+   </category>
+
+   <category>
+      <pattern>WHAT ABOUT *</pattern>
+      <template>yeh! it's good.</template>
+   </category>
+    <category>
+      <pattern>tell me a joke</pattern>
+      <template>hotel anennu karuthy barabar shopil keriya vridhan. vridhan: anthund kazhikan. barber: cuttingum , shavingum.vridhan:ankil randum oro plate porate,   hahahaha
+      </template>
+   </category>
+    <category>
+      <pattern>speak to me</pattern>
+      <template>ya i am ready to speek to you</template>
+   </category>
+
+   <category>
+      <pattern>who is tony</pattern>
+      <template>he is the one in the development team of ciri,he is a student of s eight cse</template>
+   </category>
+
+    <category>
+      <pattern>who is anandu</pattern>
+      <template>he is the one in the development team of ciri,he is a student of s eight cse</template>
+   </category>
+
+    <category>
+      <pattern>who is anand</pattern>
+      <template>he is the one in the development team of ciri,he is a student of s eight cse</template>
+   </category>
+
+    <category>
+      <pattern>who is nithin</pattern>
+      <template>he is the one in the development team of ciri,he is a student of s eight cse</template>
+   </category>
+
+    <category>
+      <pattern>fine</pattern>
+      <template>oh thats good.</template>
+   </category>
+  <category>
+      <pattern>i am fine</pattern>
+      <template>yeh! it's good.</template>
+   </category>
+
+    <category>
+      <pattern>thank you *</pattern>
+      <template>you are welcome.</template>
+   </category>
+   <category>
+      <pattern>thank you</pattern>
+      <template>you are welcome.</template>
+   </category>
+
+    <category>
+      <pattern>about u k f</pattern>
+      <template>
+      UKF College of Engineering and Technology is owned and managed by the Universal Knowledge Foundation Trust. Started in the year 2009, the college has come to a full circle and has carved out a niche for itself in the professional educational scenario of the state. UKF College is rich in its infrastructure as well as human resources. We consider our team of qualified, experienced and dedicated faculty to be the most valuable assets of the institution.
+      </template>
+   </category>
+
+    <category>
+      <pattern>about ukfcet</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>what is ukfcet</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>what is ukf</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>about u k f *</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>about ukfcet *</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>ukf</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>uk f</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>ukf *</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+   <category>
+      <pattern>uk f *</pattern>
+      <template><srai>about u k f</srai></template>
+   </category>
+
+    <category>
+      <pattern>how is u k f *</pattern>
+      <template>yeh! it's good.</template>
+   </category>
+
+   <category>
+      <pattern>how is uk f *</pattern>
+      <template>yeh! it's good.</template>
+   </category>
+
+    <category>
+      <pattern>how is u k f</pattern>
+      <template>yeh! it's good.</template>
+   </category>
+
+   <category>
+      <pattern>how is uk f</pattern>
+      <template>yeh! it's good.</template>
+   </category>
+
+    <category>
+      <pattern>how many departments *</pattern>
+      <template>there are five departments  civil elecrical computer science mechanical and electronics.</template>
+   </category>
+
+    <category>
+      <pattern>Where is mechanical *</pattern>
+      <template>go straigt.then turn left ,then the fifth academic block. near the college ground.</template>
+   </category>
+   <category>
+      <pattern>Where is the mechanical *</pattern>
+      <template>go straigt.then turn left ,then the fifth academic block. near the college ground.</template>
+   </category>
+   <category>
+      <pattern>Show me where the mechanical *</pattern>
+      <template>go straigt.then turn left ,then the fifth academic block. near the college ground.</template>
+   </category>
+   <category>
+    <pattern>Where is the mechanical department</pattern>
+      <template>go straigt.then turn left ,then the fifth academic block. near the college ground.</template>
+   </category>
+
+    <category>
+      <pattern>where is the computer science *</pattern>
+      <template>go straigt.then turn left ,then the first adminblock. go through the up staire of the admin block.</template>
+   </category>
+
+    <category>
+      <pattern>where is computer science *</pattern>
+      <template>go straigt.then turn left ,then the first adminblock. go through the up staire of the admin block.</template>
+   </category>
+
+   <category>
+      <pattern>Show me where the computer science *</pattern>
+      <template>go straigt.then turn left ,then the first adminblock. go through the up staire of the admin block.</template>
+   </category>
+   <category>
+      <pattern>where is cse *</pattern>
+      <template>go straigt.then turn left ,then the first adminblock. go through the up staire of the admin block.</template>
+   </category>
+
+   <category>
+      <pattern>where is the cse *</pattern>
+      <template>go straigt.then turn left ,then the first adminblock. go through the up staire of the admin block.</template>
+   </category>
+
+   <category>
+      <pattern>where is the c s e *</pattern>
+      <template>go straigt.then turn left ,then the first adminblock. go through the up staire of the admin block.</template>
+   </category>
+   <category>
+      <pattern>where is cse</pattern>
+      <template>go straigt.then turn left ,then the first adminblock. go throug the up staire of the admin block.</template>
+   </category>
+   <category>
+      <pattern>who is your founder</pattern>
+      <template>Riesgo technologies.</template>
+   </category>
+   <category>
+      <pattern>where is civil *</pattern>
+      <template>go straight  in .   then turn left.  then the 4th academic block  ,is the civil block.</template>
+   </category>
+
+   <category>
+      <pattern>where is the civil *</pattern>
+      <template>go straight  in .   then turn left.  then the 4th academic block  ,is the civil block.</template>
+   </category>
+
+   <category>
+      <pattern>show me the civil *</pattern>
+      <template>go straight  in .   then turn left.  then the 4th academic block  ,is the civil block.</template>
+   </category>
+
+   <category>
+      <pattern>Show me where the civil *</pattern>
+      <template>go straight  in .   then turn left.  then the 4th academic block  ,is the civil block.</template>
+   </category>
+
+   <category>
+        <pattern>which is the best department</pattern>
+        <template>
+            computer science and engineering department, They are the best in college, in academics as well as in arts and sports.
+        </template>
+    </category>
+
+
+   <category>
+      <pattern>*</pattern>
+      <template>
+      <random>
+            <li>i am not trained for that.</li>
+            <li>say it again.</li>
+            <li>sorry,i can't find it.</li>
+        </random></template>
+   </category>
+
+
+</aiml>
+
+
